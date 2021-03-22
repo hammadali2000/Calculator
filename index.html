@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div style="color: white; text-align: center; box-shadow: 2px 2px 6px wheat;" class="container">
+        <h1>MY CALCULATOR</h1>
+    </div>
+
+
+    <div class="container">
+    <table class="table">
+        
+        <thead>
+            <input type="text" class="input" id="result">
+          <tr>
+            <button class="clear" onclick="clearResult()">CA</button>
+            <button class="divide" onclick="getnum('/')">/</button>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <button class="number" onclick="getnum('7')">7</button>
+            <button class="number" onclick = "getnum('8')">8</button>
+            <button class="number" onclick = "getnum('9')">9</button>
+            <button class="number" onclick = "getnum('*')">*</button>
+          </tr>
+          <tr>
+            <button class="number" onclick = "getnum('4')">4</button>
+            <button class="number" onclick = "getnum('5')">5</button>
+            <button class="number" onclick = "getnum('6')">6</button>
+            <button class="number" onclick = "getnum('-')">-</button>
+          </tr>
+          <tr>
+            <button class="number" onclick = "getnum('1')">1</button>
+            <button class="number" onclick = "getnum('2')">2</button>
+            <button class="number" onclick = "getnum('3')">3</button>
+            <button class="number" onclick = "getnum('+')">+</button>
+          </tr>
+
+          <tr>
+            <button class="last zero" onclick = "getnum('0')">0</button>
+            <button class="last equal" onclick="result()">=</button>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
